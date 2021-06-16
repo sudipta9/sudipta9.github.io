@@ -4,6 +4,12 @@
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
+if (localStorage.getItem("highscore")) {
+  highscore = localStorage.getItem("highscore");
+  document.querySelector(".highscore").textContent =
+    localStorage.getItem("highscore");
+}
+console.log(localStorage.getItem("highscore"));
 
 const displayMessage = (message) => {
   document.querySelector(".message").textContent = message;
@@ -24,6 +30,7 @@ document.querySelector(".check").addEventListener("click", () => {
     if (score > highscore) {
       highscore = score;
       document.querySelector(".highscore").textContent = highscore;
+      localStorage.setItem("highscore", score);
     }
   } else if (guess !== secretNumber) {
     if (score > 1) {
