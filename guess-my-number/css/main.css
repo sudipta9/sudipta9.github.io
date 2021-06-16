@@ -142,12 +142,12 @@ main .credit {
   font-size: 1rem;
   color: #eee;
   padding: 1.5rem;
-  position: absolute !importent;
-  bottom: 0 !importent;
-  right: 0 !importent;
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 0 !important;
 }
 
 main .credit a {
-  color: #eee !importent;
+  color: #eee !important;
 }
 /*# sourceMappingURL=main.css.map */
