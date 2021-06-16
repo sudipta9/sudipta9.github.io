@@ -137,4 +137,17 @@ main .right .message {
 main .right .label-score {
   margin-bottom: 2rem;
 }
+
+main .credit {
+  font-size: 1rem;
+  color: #eee;
+  padding: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .credit a {
+  color: #eee;
+}
 /*# sourceMappingURL=main.css.map */
